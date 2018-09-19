@@ -1,0 +1,104 @@
+﻿Grupp GitChaos: Alejandra
+, Albin,Jonas,Erik, Jonathan.
+
+Vecka 8:
+
+Måndag den 19 februari:
+
+Idag har vi format gruppen med namn gitChaos! Vi bestämde för att vi ska bygga en websida/app där man kan läsa nyheter från olia nyhetsbyråer som vi kommer dra
+ner via olka Api'er. Vi har börjat med slack/discord kanal samt lagt upp på Github. Vi har alla skapat varsin bransh som vi kommer jobba utifrån.
+
+På våran sida ska man kunna(hittills):  
+-logga in med gmail 
+-spara vissa artiklar som "favoriter" 
+-kommentera varje enskild artikel
+-söka på träfford som matchas med nyheter
+-se toptwitters på varje artikel
+-söka med hjälp av hastags(för twitter)
+
+Vi kommer dra api'er från nyhetsbyråer och twitter.
+Vi har bestämt att vi ska mötas för en Scrum imorgon den 20de kl 10:00 på discord för att bestämma dagen. Vi kommer ha dagliga scrums samt mötas i skolan de 
+vanliga shemalagda dagar vi brukar ha.
+
+Tisdag den 20februari:
+
+Vi möts på discord kl 10:00 och vi bestämmer att alla ska göra varsin mockup som vi ska visa imorgon onsdag och utifrån dessa bestämma vilken "design" vi vill ha
+på sidan. Vi börjar med att göra mockupsen för mobil först sen web. Imorgon möts vi för att bestämma designen på sida.
+
+Onsdag den 21februari:
+
+Vi möts för en scrum kl 09:00 och visar våra muckups vi gjort. Vi kommer överens om en designtyp som vi ska använda för sidan.
+Under dagen så börjar vi koda i html/css (vi jobbar alla på olika sidor av sidan) som vi sen kommer slå ihop.
+Imorgon så möts vi på discord för scrum kl 10:00 som vanligt.
+
+Torsdag den 22februari.
+
+Vi möts kl 10:00 på discord för dagens scrum, vi går alla igenom vad vi skall göra under dagen och vad vi gjorde igår. Alla ska jobba med sin del av projektet och
+förbereder sig för presentationen imorgon av projektet. Vi ska visa en pdf med alla mockups vi gjort samt en kort presentation av våran applikation och vad man kan
+använda den till och hur den funkar.
+
+Fredag den 23februari:
+
+Vi möts kl 09:00 för dagens Scrum, idag kodar vi tillsammans i gruppen efter vi har presenterat våran ide för klassen. Vi är i stort sätt klara med desingnen på sidan.
+Det som ska göras nu är att dra ner nyheterna med apiet samt försöka implementera twitter på våran sida. 
+
+Måndag den 26februari:
+
+Vi möts kl 09:00 för dagens Scrum, slidern för alla sökalternativen har förbättrats och newsfeeden från api håller på att färdigställas från sökalternativen. Twitterfeedfunktionen har även påbörjats. Google autentisering är under uppbyggnad men snart färdigt.
+
+Tisdag den 27februari:
+
+Vi hade vårt dagliga scrum kl 10. Vi gick de delar vi har och om det finns problem som uppstått. Vi ska testa teletype för att testa på par-programmering på vissa delar av projektet.
+
+Onsdag den 28februari:
+
+Vi hade vårt dagliga scrum och gick igenom nya api. Vi har alla jobbat som en enhet med sina delar och med varandras samt så ska alla ha uppdaterad layout.
+
+Torsdag den 1mars:
+
+Möte på discord kl 10. Idag arbetas det med att hjälpas åt att färdigställa de funktioner som ska göras denna vecka. Vi kommer ha ett återkopplande diskussion senare under dagen via slack.
+
+Fredag den 2mars: 
+Scrum möte på morgonen där vi gick igenom vår dagliga skörd av kodning. Vi utförde förbättringar på autentisering och väder api färdigställdes samt att vi la till slider för taggar. 
+Footern fick en genomgång med förändringar samt så jobbades det med sparning av artiklar till databas/user. Vi gick även igenom vad som ska presenteras på sprintreview som sker på måndag.
+
+Måndag 5:e Mars:
+Möte på morgonen och sammanförde kod till Sprint Review. Efterråt ett samlingsmöte med ett par diskussioner om vad som behöver göras näst. Resterande dag arbete med kod.
+
+Tisdag 6:e Mars:
+Komplikationer med git och Discord som löstes genom teamwork och spirit! Samtliga medlemmar fortsatte att jobba på sitt håll efter det.
+
+Onsdag 7:e Mars: 
+Två sjuka och jobbar därmed hemmavid, resterande träffas och jobbar vidare på sitt håll i skolan.
+
+Torsdag 8:e Mars:
+Kort skrum vanlig tid med två borta p.g.a tandläkare och trasig dator, samtliga jobbar vidare med det de har som uppgift.
+
+Fredag 9:e Mars: 
+Okomplicerat möte och fortsatt jobb, två borta p.g.a sjukdom och trasig dator men de fortsätter att jobba hemifrån.
+
+Måndag 12 mars:
+Dåligt förberedande inför redovisningen. Något som vi måste jobba mycket bättre på inför nästa sprintreview. Albin är vår nya scrummaster. Vi delade upp uppgifter på trello vad vi skulle hinna med till nästa sprint.
+
+Onsdag 14 
+Inte mycket gjort idag då vi hade företag på besök i skolan.
+
+Torsdag 15
+Möte klockan 10. Fortsatt arbete med kommentarer och designen om hur det ska se ut. Göra om hela slidern så att man inte behöver klicka sig vidare bara ett steg för sig.
+Fortsatt jobb med sparade artiklar.
+
+Fredag 16
+Möte klockan 10. Fortsatt med kommentarer samt slidern som blev färdiga precis innan helgen.
+
+Måndag 19
+Under sprinten får vi reda på att vi har en del buggar att utreda samt att vi måste föra sidan  Efter sprinten har vi möte ang detta och vem som gör vad.
+
+Tisdag 20
+Möte kl 10 på discord, tills på fredag ska sidan vara responsiv! samt ska konsollen vara tom.
+
+Onsdag 21
+Möte kl 10 i skolan, idag har vi alla fokuserat på att göra sidan responsiv för alla platformer.
+
+Torsdag 22:
+Möte kl 10 i skolan, vi har några buggar som vi måste fixa under dagen samt fortsätta med responsiviteten, för att sedan merga allting och förberede
+sig för morgondagens presentation!

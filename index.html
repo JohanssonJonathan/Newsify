@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Projektgrupp Newsify</title>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/aengman.css">
+  <link rel="stylesheet" href="styles/weather-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="./styles/stylesFooter.css">
+
+</head>
+
+<body>
+
+  <div id="ShowAWhile">
+
+  </div>
+
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        appId: '210487799499825',
+        autoLogAppEvents: true,
+        xfbml: true,
+        version: 'v2.12'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) { return; }
+      js = d.createElement(s); js.id = id;
+      js.src = "https://connect.facebook.net/en_US/sdk.js";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+
+  <header id="header">
+
+
+    <div id="weatherCast">
+      <i id="weather" class="wi wi-day-cloudy"></i>
+      <div id="weatherLocation">Northville, Greenland</div>
+      <div id="weatherTemp">
+        <p id="min">-40ºC</p>
+        <p id="max">-20ºC</p>
+      </div>
+    </div>
+
+    <h5 class="follow">Follow the news you actually want to follow</h5>
+
+    <div id="loginPopup">
+      <button class="popupButton">Log in</button>
+      <p>When logged in you can save your favourite articles, save your searches and discuss freely in any comment thread</p>
+    </div>
+
+    <div id="login">
+      <div id="googleLogo">
+        <i class="fab fa-google"></i>
+      </div>
+      <div id="facebookLogo">
+        <i class="fab fa-facebook"></i>
+      </div>
+      </div>
+
+      <div id="whenLoggedIn">
+
+      <div class="slider">
+
+        <div id="tagsSlider">
+
+        <div id="tagsSliderContentChange">
+
+        </div>
+
+        </div>
+
+        </div>
+
+
+    </div>
+
+
+  </header>
+
+
+
+  <div id="moreOp">
+
+      <button type="button" name="button" id="more">More options</button>
+
+  </div>
+<!-- <div id="btnwrapper"> -->
+  <div id="buttons">
+      <button id="deleteOwnTag">Delete tag</button>
+      <button id="showFavouriteOutput">Show Favourites (<span id="addNumberCount"></span>)</button>
+      <button id="suggestedNews">Suggested News</button>
+
+  </div>
+<!-- </div> -->
+  <div id="beforeLoggedIn">
+    <div class="slider">
+
+
+
+      <div class="sliderContent">
+
+        <div id="sliderContentChange">
+          <input class="tags" id="inputKeyword" type="text" placeholder="Keyword"><!--
+          --><div class="tags">
+            Source Name
+          </div><!--
+          --><div class="tags">
+            Country
+          </div><!--
+          --><div class="tags">
+            Category
+          </div><!--
+          --><div class="tags">
+            Languages
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div id="canNotShow">
+
+      </div>
+
+
+
+    </div>
+
+
+    <div class="slider" id="sourceSlider">
+
+
+      <div class="sliderContentSource">
+
+
+        <div id="sourceContentChange">
+          <div class="tags">
+            All
+          </div><!--
+          --><div class="tags">
+            CNN
+          </div><!--
+          --><div class="tags">
+            BBC News
+          </div><!--
+          --><div class="tags">
+            ABC News
+          </div><!--
+          --><div class="tags">
+            Al Jazeera English
+          </div><!--
+          --><div class="tags">
+            ESPN
+          </div><!--
+          --><div class="tags">
+            Financial Times
+          </div><!--
+          --><div class="tags">
+            Fox News
+          </div><!--
+          --><div class="tags">
+            Daily Mail
+          </div><!--
+          --><div class="tags">
+            The Guardian (Uk)
+          </div><!--
+          --><div class="tags">
+            The New York Times
+          </div><!--
+          --><div class="tags">
+            IGN
+          </div><!--
+          --><div class="tags">
+            CNN Spanish
+          </div><!--
+          --><div class="tags">
+            Bloomberg
+          </div><!--
+          --><div class="tags">
+            CBS
+          </div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <div class="slider" id="countrySlider">
+
+
+      <div class="sliderContentCountry">
+
+
+        <div id="countryContentChange">
+
+          <div class="tags">
+            All
+          </div><!--
+          --><div class="tags">
+            USA
+          </div><!--
+          --><div class="tags">
+            Canada
+          </div><!--
+          --><div class="tags">
+            England
+          </div><!--
+          --><div class="tags">
+            Germany
+          </div><!--
+          --><div class="tags">
+            France
+          </div><!--
+          --><div class="tags">
+            Australia
+          </div><!--
+          --><div class="tags">
+            New Zeeland
+          </div><!--
+          --><div class="tags">
+            China
+          </div><!--
+          --><div class="tags">
+            Japan
+          </div><!--
+          --><div class="tags">
+            Russia
+          </div><!--
+          --><div class="tags">
+            Spain
+          </div><!--
+          --><div class="tags">
+            Sweden
+          </div><!--
+          --><div class="tags">
+            Norway
+          </div><!--
+          --><div class="tags">
+            Turkey
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="slider" id="categorySlider">
+
+
+      <div class="sliderContentCategory">
+
+
+        <div id="categoryContentChange">
+
+          <div class="tags">
+            All
+          </div><!--
+          --><div class="tags">
+            Business
+          </div><!--
+          --><div class="tags">
+            Entertainment
+          </div><!--
+          --><div class="tags">
+            General
+          </div><!--
+          --><div class="tags">
+            Health
+          </div><!--
+          --><div class="tags">
+            Science
+          </div><!--
+          --><div class="tags">
+            Sport
+          </div><!--
+          --><div class="tags">
+            Technology
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+    <div class="slider" id="languageSlider">
+
+
+      <div class="sliderContentLanguage">
+
+
+        <div id="languageContentChange">
+
+          <div class="tags">
+            All
+          </div><!--
+          --><div class="tags">
+            Arabic
+          </div><!--
+          --><div class="tags">
+            English
+          </div><!--
+          --><div class="tags">
+            Spanish
+          </div><!--
+          --><div class="tags">
+            French
+          </div><!--
+          --><div class="tags">
+            Hebrew
+          </div><!--
+          --><div class="tags">
+            Italian
+          </div><!--
+          --><div class="tags">
+            Dutch
+          </div><!--
+          --><div class="tags">
+            Norweigan
+          </div><!--
+          --><div class="tags">
+            Portugues
+          </div><!--
+          --><div class="tags">
+            Russian
+          </div><!--
+          --><div class="tags">
+            Swedish
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+<div class="taggar">
+
+
+    <div class="currentTag">
+
+      <div id="current">
+      <button class="Btn" id="addTag">Add tag</button><!--
+
+      --><button class="Btn" id="searchBtn">Search</button><!--
+
+      --><button class="Btn" id="deleteTag">Clear tag</button><!--
+    -->
+      </div>
+
+
+
+
+    <h5 id="yourCurrentTag">Your current tag is </h5>
+
+    <div id="currentTag">
+
+      <span id="inputTag"></span>
+      <span id="sourceTag"></span>
+      <span id="countryTag"></span>
+      <span id="categoryTag"></span>
+      <span id="languageTag"></span>
+
+    </div>
+
+    <div id="ownCurrentTag">
+
+    </div>
+  </div>
+
+
+
+
+</div>
+
+    <div id="newsContainer">
+
+    <main>
+    </main>
+    <div id="iframe">
+    </div>
+    </div>
+
+  <div id="footer">
+
+    <i class="fas fa-university"></i>
+    <p id="logo">Newsify</p>
+    <div id="time">TIME</div>
+    <div id = "historyWrap">
+      <div id="divHistory"></div>
+      <div id="eventYear"></div>
+      <div id="eventText"></div>
+    </div>
+
+  </div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyA2gS2ewiVDjqM1mPymAIrHEtmwlw4jsT8",
+      authDomain: "newschaos-e8558.firebaseapp.com",
+      databaseURL: "https://newschaos-e8558.firebaseio.com",
+      projectId: "newschaos-e8558",
+      storageBucket: "newschaos-e8558.appspot.com",
+      messagingSenderId: "695749409670"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <!--Main javascript fil. Där alla variabler ska skrivas och som vi kan använda oss av. Eller om vi har någon stor funktion som ska användas över hela sidan. t.ex firebase.
+DEN ENDA GÅNGEN NI KAN SNAPA EN VARIABEL ÄR -> när ni skapar den i en FUNKTION så att den inte krockar med andra variabler.  -->
+
+<script src="js/mainJavascript.js"></script>
+
+<!-- Egen javascriptfil för klockan i footern -->
+<script src="js/clockJavascript.js"></script>
+
+
+<!--Jonathans javascriptfil -->
+<script src="js/jonathansVariabler.js"></script>
+<script src="js/jonathanJavascript.js"></script>
+
+<!--Alejandros javascriptfil -->
+<script src="js/alejandroJavascript.js"></script>
+
+<!--Albins javascriptfil -->
+<script src="js/albinJavascript.js"></script>
+
+<!--Jonas javascriptfil -->
+<script src="js/jonasJavascript.js"></script>
+
+<!--Eriks javascriptfil -->
+<script src="js/erikJavascript.js"></script>
+
+
+
+
+</body>
+
+</html>

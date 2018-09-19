@@ -1,0 +1,122 @@
+.userPicture{
+    margin: 0 auto;
+    width: 50px;
+    margin-top: 0;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    box-shadow: 0 0 20px;
+}
+.commentUserPicture {
+  width: 30px;
+  height: 30px;
+  float: left;
+  position: relative;
+}
+
+.commentUsername {
+    color: dodgerblue;
+    margin-left: 35px;
+    margin-bottom: 15px;
+    position: relative;
+    top: 5px;
+}
+
+/* Jon */
+.loggedIn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.userName {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.commentButton {
+    border-radius: 40%;
+    width: 70px;
+    height: 50px;
+    float: right;
+    position: relative;
+    bottom: 35px;
+    right: 40%;
+    background: lightgrey;
+}
+
+.commentButton:hover {
+  background: #333644;
+  color: white;
+  cursor: pointer;
+}
+
+.commentField {
+    max-height: 210px;
+    width: 100%;
+    white-space: nowrap;
+    overflow-y: scroll;
+    padding-right: 20px;
+    box-shadow: 0 -10px 10px -5px black, inset 0 -5px 5px -5px black;
+}
+
+.commentText {
+    height: auto;
+    max-height: 100%;
+    max-width: 100%;
+    color: black;
+    word-break: normal;
+    word-wrap: normal;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -o-pre-wrap;
+}
+.writeBox {
+    color: black;
+    background: white;
+    position: relative;
+    top: 20px;
+    height: 55px;
+    width: 50%;
+    display: block;
+    box-shadow: 0px 0px 5px black;
+}
+
+.commentWhole {
+  margin: 20px;
+  padding: 7px;
+  box-shadow: 0px 8px 6px -4px black;
+}
+
+.extraButtonContainer {
+  overflow: hidden;
+}
+
+@media (max-width: 700px){
+  .writeBox {
+    width: 70%;
+  }
+  .commentButton {
+    left: 0px;
+  }
+}
+@media (max-width: 600px){
+  .userPicture {
+    width: 30px;
+  }
+}
+@media (max-width: 400px){
+  .writeBox {
+    height: 30px;
+  }
+  .commentButton {
+    height: 30px;
+    width: 50px;
+    bottom: 13px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 1300px){
+  .commentButton {
+    right: 30%;
+  }
+}

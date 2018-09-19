@@ -1,0 +1,106 @@
+#footer {
+    position: fixed;
+    bottom: 0;
+    align-self: flex-start;
+    background:#333644;
+    color:rgba(255,255,255,0.7);
+    width: 100%;
+    opacity: 0;
+    height: 80px;
+}
+
+#divHistory {
+    display: inline;
+    position: relative;
+    width: 20%;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#footer > i {
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+#eventYear {
+    display: inline;
+    position: absolute;
+    font-weight: bold;
+    font-size: 13px;
+    margin-left: 70px;
+    top: 2px;
+}
+
+#eventText {
+    display: block;
+    position: relative;
+    margin-top: 3px;
+    width: 100%;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+#logo {
+    position: absolute;
+    color: white;
+    font-size: 27px;
+    font-weight: bold;
+    font-style: italic;
+    right: 0px;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+#time {
+    position: absolute;
+    margin-right: 100px;
+    right: 150px;
+    font-weight: bold;
+    font-size: 10px;
+    top: 40%;
+    display: none;
+}
+#historyWrap {
+  width: 40%;
+  margin-left: 30%;
+  margin-right: 30%;
+  position: absolute;
+  margin-top: 10px;
+}
+
+/**** MAX 1200 - MIN ****/
+
+@media screen and (max-width: 1200px) {
+    #logo {
+        display: none;
+    }
+
+    #divHistory {
+        display: none;
+    }
+
+    #eventYear {
+        display: none;
+    }
+
+    #eventText {
+        display: none;
+    }
+
+    #time {
+        font-size: 12px;
+        width: 100%;
+        left: 40%;
+        display: block;
+    }
+
+    .fa-university {
+        display: none;
+
+    }
+    #footer {
+      height: 30px;
+    }
+
+}
